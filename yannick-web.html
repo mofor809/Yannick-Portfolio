@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Yannick Mofor's Portfolio
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+      p {
+        
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+
+      .header {
+        background-color: dimgray;
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+
+       
+      }
+
+      .about-button, .projects-button, .resume-button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.35s ease-in-out;
+        font-family: 'Gloock', serif;
+        color: rgb(228, 224, 212)
+        
+       
+      }
+
+      .about-button:hover, .projects-button:hover, .resume-button:hover {
+        color: rgb(232, 209, 142);
+        
+      }
+
+      .about-button:active, .projects-button:active, .resume-button:active {
+        opacity: .40;
+        transition: opacity 0.4s;
+      }
+
+      .button {
+        margin-left: 52px;
+        margin-right: 52px;
+  
+      }
+
+      .about-section {
+        background-image: url("gradient.png");
+        height: 600px;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        object-fit: contain;
+
+      }
+
+
+     .image {
+      margin-left: 70px;
+      height: 280px;
+      width: 280px;
+      border-radius: 200px;
+      box-shadow: 3px 4px 2px rgb(235, 213, 179, 0.25);
+      border-color: rgb(235, 213, 179);
+      border-width: 12px;
+      border-style: solid;
+
+      }
+
+      .about-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        object-fit: contain;
+
+      }
+      .name {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 40px;
+        font-family: 'Gloock', serif;
+        margin-bottom: 15px;
+        margin-left: 60px;
+
+      }
+
+      .description {
+        display: flex;
+        flex: 4;
+        margin-left: 180px;
+      }
+
+      .text {
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex: 3.5;
+        min-width: 450px;
+        margin-right: 100px;
+    
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="button">
+        <button class="about-button">
+          About Me
+        </button>
+      </div>
+      <div class="button">
+        <button class="projects-button">
+          Projects
+        </button>
+      </div>
+      <div class="button">
+        <button class="resume-button">
+          Resume
+        </button>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-profile">
+        <div class="name">Yannick Mofor</div>
+          <div class="me-picture">
+            <img class="image" src="yannick-picture.jpg">
+          </div>
+      </div>
+      <div class="description">
+        <p class="text">Hi! My name is Yannick Mofor, and I am a freshman at Stanford University
+          interested in computer science, product management, and data science (specifically its
+          potential for societal improvement- especially in population health!)
+          Outside of the classroom, I play viola in the Stanford Symphony Orchestra, intern at the Stanford Society of
+          Black Scientists and Engineers, and intern on the outreach team for the 
+          Affiliated Stanford Entrepreneurial Students (ASES). I hope you enjoy my portfolio as much as I enjoyed making it!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
